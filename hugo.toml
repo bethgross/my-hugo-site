@@ -1,4 +1,38 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://bethgross.github.io/my-hugo-site/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Beth Gross'
 theme = 'ananke'
+
+# Enable syntax highlighting
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+
+
+[params]
+  author = "Beth Gross"
+  description = "Notes, Portfolio, and About"
+  background_color_class = "bg-black"
+  recent_posts_number = 3
+
+
+[menu]
+
+  [[menu.main]]
+    name = "ABOUT"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    name = "PORTFOLIO"
+    url = "/portfolio/"
+    weight = 2
+
+  [[menu.main]]
+    name = "POSTS"
+    url = "/posts/"
+    weight = 3
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
