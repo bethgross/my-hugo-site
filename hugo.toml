@@ -2,6 +2,8 @@ baseURL = 'https://bethgross.github.io/my-hugo-site/'
 languageCode = 'en-us'
 title = 'Beth Gross'
 theme = 'ananke'
+resourceDir = "../resources"
+
 
 # Enable syntax highlighting
 pygmentsUseClasses = true
@@ -36,3 +38,15 @@ pygmentsCodeFences = true
   [caches.images]
     dir = ':cacheDir/images'
 
+[[params.ananke_socials]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/bethcgross/"
+
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = 'static'
+    target = 'assets'

@@ -2,6 +2,7 @@
 title: "About Me"
 slug: about
 draft: false
+featured_image: '/images/tahoeblue-wide.jpg'
 
 ---
 

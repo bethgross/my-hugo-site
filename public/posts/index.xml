@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on Beth Gross</title>
-    <link>https://bethgross.github.io/my-hugo-site/posts/</link>
-    <description>Recent content in Articles on Beth Gross</description>
+    <title>Posts on Beth Gross</title>
+    <link>http://localhost:1313/my-hugo-site/posts/</link>
+    <description>Recent content in Posts on Beth Gross</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://bethgross.github.io/my-hugo-site/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/my-hugo-site/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My second post</title>
+      <link>http://localhost:1313/my-hugo-site/posts/another_post/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/my-hugo-site/posts/another_post/</guid>
+      <description>&lt;h2 id=&#34;just-pretty-pictures&#34;&gt;Just pretty pictures&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/my-hugo-site/images/graph-blues.jpg&#34; alt=&#34;My Roam graph&#34; title=&#34;Roam Graph&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Roam Research</title>
+      <link>http://localhost:1313/my-hugo-site/posts/test/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/my-hugo-site/posts/test/</guid>
+      <description>&lt;h2 id=&#34;using-roam-research-for-notetaking&#34;&gt;Using Roam Research for notetaking&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/my-hugo-site/images/graph-blues.jpg&#34;&#xA;    alt=&#34;My Roam Graph&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;My Roam Graph&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
   </channel>
 </rss>
