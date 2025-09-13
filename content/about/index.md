@@ -6,8 +6,6 @@ featured_image: '/images/tahoeblue-wide.jpg'
 
 ---
 
-## About Me
-
 Experienced analytics professional with 7+ years applying data-driven methods across tech and ecommerce sectors. Proven success in building analytics foundations, from pipelines and modeling to experimentation and dashboarding. Strong quantitative background starting in hydrogeology, then shifting focus to digital product and growth analytics.
 
 ### Skills

@@ -6,21 +6,21 @@
     <description>Recent content in Posts on Beth Gross</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/my-hugo-site/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My second post</title>
-      <link>http://localhost:1313/my-hugo-site/post/just-pretty/</link>
-      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/my-hugo-site/post/just-pretty/</guid>
-      <description>&lt;h2 id=&#34;using-roam-research-for-notetaking&#34;&gt;Using Roam Research for notetaking&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/my-hugo-site/images/graph-blues.jpg&#34;&#xA;    alt=&#34;Roam Graph&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Roam Graph&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
-    </item>
     <item>
       <title>Roam Research</title>
       <link>http://localhost:1313/my-hugo-site/post/graph-my-brain/</link>
       <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/my-hugo-site/post/graph-my-brain/</guid>
-      <description>&lt;h2 id=&#34;using-roam-research-for-notetaking&#34;&gt;Using Roam Research for notetaking&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/my-hugo-site/images/graph-blues.jpg&#34; alt=&#34;My Roam graph&#34; title=&#34;Roam Graph&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;using-roam-research-for-notetaking&#34;&gt;Using Roam Research for notetaking&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/my-hugo-site/images/graph-blues.jpg&#34;&#xA;    alt=&#34;Roam Graph&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Roam Graph&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Roam Research</title>
+      <link>http://localhost:1313/my-hugo-site/post/just-pretty/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/my-hugo-site/post/just-pretty/</guid>
+      <description>&lt;h2 id=&#34;while-i-work-on-my-site-heres-a-sunrise&#34;&gt;While I work on my site, here&amp;rsquo;s a sunrise&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/my-hugo-site/images/sunrise-harbor.jpg&#34;&#xA;    alt=&#34;Sunrise&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Sunrise&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
   </channel>
 </rss>

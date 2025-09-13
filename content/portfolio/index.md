@@ -6,4 +6,8 @@ featured_image: '/images/tahoeblue-wide.jpg'
 
 ---
 
-## My Work
+## Project Highlights
+
+[Developing Intuition for Linear Regression Modeling](https://github.com/bethgross/developing-intuition/blob/main/linear_regression.ipynb)
+
+
