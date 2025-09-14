@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p class="muted">{{ . }}</p>{{ end }}
+  {{ .Content }}
+  {{ with .Resources.ByType "image" }}
+    <div class="grid">
+      {{ range . }}<img src="{{ .RelPermalink }}" alt="">{{ end }}
+    </div>
+  {{ end }}
+</article>
+{{ end }}

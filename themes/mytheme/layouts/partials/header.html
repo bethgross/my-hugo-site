@@ -1,2 +1,6 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<a href="{{ site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+<nav>
+  {{ range site.Menus.main }}
+    <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+  {{ end }}
+</nav>

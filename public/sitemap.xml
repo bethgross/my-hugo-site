@@ -2,48 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bethgross.github.io/my-hugo-site/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/post/graph-my-brain/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/post/just-pretty/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/tags/blue/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/tags/green/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/posts/post-3/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/tags/red/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/tags/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/posts/post-2/</loc>
-    <lastmod>2023-02-15T10:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/posts/post-1/</loc>
-    <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/posts/</loc>
-    <lastmod>2023-01-01T08:30:00-07:00</lastmod>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/post/</loc>
+    <loc>/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/about/</loc>
+    <loc>/posts/</loc>
+    <lastmod>2017-03-02T12:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/categories/</loc>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/portfolio/</loc>
-  </url><url>
-    <loc>https://bethgross.github.io/my-hugo-site/post/r_to_python/</loc>
+    <loc>/portfolio/</loc>
   </url>
 </urlset>

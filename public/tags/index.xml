@@ -2,32 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Beth Gross</title>
-    <link>https://bethgross.github.io/my-hugo-site/tags/</link>
+    <link>http://localhost:1313/my-hugo-site/tags/</link>
     <description>Recent content in Tags on Beth Gross</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
-    <atom:link href="https://bethgross.github.io/my-hugo-site/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Blue</title>
-      <link>https://bethgross.github.io/my-hugo-site/tags/blue/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://bethgross.github.io/my-hugo-site/tags/blue/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Green</title>
-      <link>https://bethgross.github.io/my-hugo-site/tags/green/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://bethgross.github.io/my-hugo-site/tags/green/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Red</title>
-      <link>https://bethgross.github.io/my-hugo-site/tags/red/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://bethgross.github.io/my-hugo-site/tags/red/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://localhost:1313/my-hugo-site/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

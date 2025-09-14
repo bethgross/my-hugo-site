@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h1>Portfolio</h1>
+<div class="grid">
+  {{ range .Pages }}
+    <a class="card" href="{{ .RelPermalink }}">
+      {{ with .Resources.GetMatch (default "" .Params.thumb) }}<img src="{{ .RelPermalink }}" alt="">{{ end }}
+      <h2>{{ .Title }}</h2>
+      {{ with .Params.summary }}<p class="muted">{{ . }}</p>{{ end }}
+    </a>
+  {{ end }}
+</div>
+{{ end }}

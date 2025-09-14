@@ -1,26 +1,22 @@
 ---
 title: "Beth Gross"
 description: "Analytics | Data Science | Stuff"
-theme_version: '2.8.2'
 featured_image: '/images/tahoeblue-wide.jpg'
 
 ---
 # Hi, I'm Beth Gross, a data architect. 
 
+### Skills  
+      - Data Science (Python, R, SQL)  
+      - Product & Marketing Analytics  
+      - Analytics Tools (Amplitude, AI-native platforms)  
+      - Version Control & Collaboration (Git, GitHub)
+
 ## My Approach to Data Architecture
 
-Information Visualization
+Outside of work, I enjoy learning continuously, exploring how AI and ML can be applied responsibly, and working on projects that make data accessible and useful for good causes.  
 
-Tailored to You
-
-Built to Evolve
-
-
-## Project Highlights
-
-TBD
-
-
-## Tools I've Worked With
-
-TBD
+### Interests
+- Data for good  
+- Continuous learning  
+- AI / ML

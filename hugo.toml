@@ -1,54 +1,35 @@
-baseURL = 'https://bethgross.github.io/my-hugo-site/'
+baseURL = '/'
 languageCode = 'en-us'
-title = 'Beth Gross'
+title = "Beth Gross"
 theme = 'mytheme'
-resourceDir = "../resources"
 
 
-# Enable syntax highlighting
-pygmentsUseClasses = true
-pygmentsCodeFences = true
+# Syntax highlighting (Hugo's built-in Chroma)
+[markup]
+  [markup.highlight]
+    noClasses = true
+    codeFences = true
 
 
 [params]
-  author = "Beth Gross"
-  description = "Notes, Portfolio, and About"
-  background_color_class = "bg-black"
-  recent_posts_number = 3
-  body_classes = "avenir bg-white"
+  mainSections = ["Posts"]   # used by some list/home templates if referenced
 
 
 [menu]
-
   [[menu.main]]
-    name = "ABOUT"
-    url = "/about/"
+    name = "About"
+    url = "/"
     weight = 1
-
   [[menu.main]]
-    name = "PORTFOLIO"
+    name = "Portfolio"
     url = "/portfolio/"
     weight = 2
-
   [[menu.main]]
-    name = "POSTS"
+    name = "Posts"
     url = "/posts/"
     weight = 3
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
 
-[[params.ananke_socials]]
-name = "LinkedIn"
-url = "https://www.linkedin.com/in/bethcgross/"
-
-
-[module]
-  [[module.mounts]]
-    source = 'assets'
-    target = 'assets'
-  [[module.mounts]]
-    source = 'static'
-    target = 'assets'
-
+[taxonomies]
+tag = ""
+category = ""

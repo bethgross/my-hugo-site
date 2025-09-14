@@ -1,19 +1,5 @@
 ---
-title: "Portfolio"
-slug: portfolio
-draft: false
-# featured_image: '/images/tahoeblue-wide.jpg'
-layout: "blocks"
-blocks:
-  - type: gallery
-    images:
-      - "/images/graph-blues.jpg"
-      - "/images/sunrise-harbor.jpg"
-      - "/images/tahoeblue-wide.jpg"
+title: "About Me"
 ---
-
-## Project Highlights
-
-[Developing Intuition for Linear Regression Modeling](https://github.com/bethgross/developing-intuition/blob/main/linear_regression.ipynb)
-
-
+Hi, I’m Beth — analyst, data scientist, builder.  
+See my [portfolio](/portfolio/) and [posts](/posts/).
