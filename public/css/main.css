@@ -20,3 +20,15 @@ a {
   color: #00e;
   text-decoration: none;
 }
+
+/* base */
+* { box-sizing: border-box }
+body { margin: 1rem auto; max-width: 900px; font: 16px/1.6 system-ui, sans-serif; color: #222 }
+a { color: #06c; text-decoration: none } a:hover { text-decoration: underline }
+pre { overflow:auto; padding:.75rem; background:#f7f7f7; border:1px solid #eee; border-radius:6px }
+
+/* two-column layout */
+.two-col { display:grid; gap:1.25rem; grid-template-columns: 1fr }
+@media (min-width: 900px) { .two-col { grid-template-columns: 1fr 1fr } }
+.two-col > div { min-width:0 } /* prevent overflow */
+.two-col h4, .two-col h3 { margin-top:0.25rem }

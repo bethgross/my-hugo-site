@@ -1,0 +1,6 @@
+{{/* Split the inner Markdown into left/right at <!--col--> */}}
+{{- $parts := split .Inner "<!--col-->" -}}
+<div class="two-col">
+  <div>{{ index $parts 0 | markdownify }}</div>
+  <div>{{ if ge (len $parts) 2 }}{{ index $parts 1 | markdownify }}{{ end }}</div>
+</div>

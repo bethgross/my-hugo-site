@@ -1,0 +1,6 @@
+{{ define "main" }}
+  {{ range .Params.blocks }}
+    {{ partial (printf "blocks/%s.html" .type) (dict "page" $ "b" .) }}
+  {{ end }}
+  <article class="body-content">{{ .Content }}</article>
+{{ end }}

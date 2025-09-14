@@ -2,14 +2,19 @@
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
   {{ partial "head.html" . }}
+
+  {{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 </head>
 <body>
   <header>
     {{ partial "header.html" . }}
   </header>
+
   <main>
     {{ block "main" . }}{{ end }}
   </main>
+
   <footer>
     {{ partial "footer.html" . }}
   </footer>

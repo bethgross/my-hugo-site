@@ -1,7 +1,7 @@
 baseURL = 'https://bethgross.github.io/my-hugo-site/'
 languageCode = 'en-us'
 title = 'Beth Gross'
-theme = 'ananke'
+theme = 'mytheme' # mytheme | ananke
 resourceDir = "../resources"
 
 

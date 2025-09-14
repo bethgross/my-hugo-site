@@ -2,8 +2,14 @@
 title: "Portfolio"
 slug: portfolio
 draft: false
-featured_image: '/images/tahoeblue-wide.jpg'
-
+# featured_image: '/images/tahoeblue-wide.jpg'
+layout: "blocks"
+blocks:
+  - type: gallery
+    images:
+      - "/images/graph-blues.jpg"
+      - "/images/sunrise-harbor.jpg"
+      - "/images/tahoeblue-wide.jpg"
 ---
 
 ## Project Highlights
