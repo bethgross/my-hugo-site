@@ -1,0 +1,37 @@
+{{ define "main" }}
+  {{ with .Content }}
+    <section class="section">
+      {{ . }}
+    </section>
+  {{ end }}
+
+  {{ $posts := sort (where site.RegularPages "Section" "posts") "Date" "desc" }}
+  {{ if gt (len $posts) 0 }}
+    {{ $paginator := .Paginate $posts }}
+    <section class="section">
+      <ul class="post-list">
+        {{ range $paginator.Pages }}
+          {{- $img := default (site.Params.featured_image) (.Param "featured_image") -}}
+          <li class="post-list__item">
+            <a class="post-list__thumb" href="{{ .RelPermalink }}">
+              {{ with $img }}<img src="{{ . | relURL }}" alt="">{{ end }}
+            </a>
+            <div class="post-list__body">
+              <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+              <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+              {{ with .Params.description }}
+                <p>{{ . }}</p>
+              {{ else }}
+                {{ with .Summary }}<p>{{ . | plainify }}</p>{{ end }}
+              {{ end }}
+              <a class="post-list__cta" href="{{ .RelPermalink }}">Read more</a>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+      {{ template "partials/pagination.html" . }}
+    </section>
+  {{ else }}
+    <section class="section"><p class="muted">No posts yet — check back soon.</p></section>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,5 @@
+name = "My Clean Theme"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+author = "Beth Gross"
+min_version = "0.112.0"

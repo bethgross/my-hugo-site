@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="post-single">
+  <div class="post-inner">
+    <header>
+      <h1>{{ .Title }}</h1>
+      <div class="meta">
+        {{ with .Date }}<time datetime="{{ . }}">{{ .Format "Jan 2, 2006" }}</time>{{ end }}
+        <span class="muted">{{ .ReadingTime }} min read</span>
+      </div>
+      {{ with .Params.description }}<p class="muted">{{ . }}</p>{{ end }}
+    </header>
+    <div class="post-body">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

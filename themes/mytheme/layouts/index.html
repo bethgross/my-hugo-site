@@ -1,0 +1,47 @@
+{{ define "main" }}
+  {{ with .Content }}
+    <section class="section">
+      {{ . }}
+    </section>
+  {{ end }}
+
+  {{ $mainSections := site.Params.mainSections | default (slice "posts") }}
+  {{ range $section := $mainSections }}
+    {{ with site.GetPage (printf "section/%s" ($section | lower)) }}
+      {{ $pages := (.RegularPagesRecursive | first 3) }}
+      {{ if gt (len $pages) 0 }}
+        <section class="section">
+          <h2>{{ .Title }}</h2>
+          <div class="section__grid">
+            {{ range $pages }}
+              <article class="summary">
+                <p class="summary__date">{{ .Date.Format "Jan 2, 2006" }}</p>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ with .Params.description }}<p>{{ . }}</p>{{ else }}{{ with .Summary }}<p>{{ . | plainify }}</p>{{ end }}{{ end }}
+                <a class="summary__cta" href="{{ .RelPermalink }}">Read more</a>
+              </article>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ with site.GetPage "section/portfolio" }}
+    {{ if gt (len .Pages) 0 }}
+      <section class="section">
+        <h2>{{ .Title }}</h2>
+        <div class="section__grid">
+          {{ range first 4 .Pages }}
+            <article class="summary">
+              {{ with .Resources.GetMatch (default "" .Params.thumb) }}<img class="summary__thumb" src="{{ .RelPermalink }}" alt="">{{ end }}
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+              <a class="summary__cta" href="{{ .RelPermalink }}">View project</a>
+            </article>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+{{ end }}

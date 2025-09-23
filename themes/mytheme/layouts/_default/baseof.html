@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ block "title" . }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   {{ partial "head.html" . }}
-
   {{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 </head>
 <body>
-  <header>{{ partial "header.html" . }}</header>
-  <main>{{ block "main" . }}{{ end }}</main>
-  <footer>{{ partial "footer.html" . }}</footer>
+  <div class="site">
+    <header>{{ partial "header.html" . }}</header>
+    {{ block "hero" . }}{{ partial "hero.html" . }}{{ end }}
+    <main>{{ block "main" . }}{{ end }}</main>
+    <footer>{{ partial "footer.html" . }}</footer>
+  </div>
 </body>
 </html>

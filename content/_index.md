@@ -1,22 +1,43 @@
 ---
-title: "Beth Gross"
-description: "Analytics | Data Science | Stuff"
-featured_image: '/images/tahoeblue-wide.jpg'
+title: "Hi, I'm Beth"
+description: "Analytics | Data Science | Data Architecture"
+featured_image: '/images/abstract_plain_gemini.jpg'
 
 ---
-# Hi, I'm Beth Gross, a data architect. 
 
-### Skills  
-      - Data Science (Python, R, SQL)  
-      - Product & Marketing Analytics  
-      - Analytics Tools (Amplitude, AI-native platforms)  
-      - Version Control & Collaboration (Git, GitHub)
+Somehow you found your way to my website. Welcome! This as a thought-space where I share my work, ideas, and current projects.    
 
-## My Approach to Data Architecture
 
-Outside of work, I enjoy learning continuously, exploring how AI and ML can be applied responsibly, and working on projects that make data accessible and useful for good causes.  
+## Skills
 
-### Interests
-- Data for good  
-- Continuous learning  
-- AI / ML
+- Product & marketing analytics
+- Data architecture & pipelines
+- Experimentation & causal inference
+- Data storytelling & visualization
+- Cross-functional collaboration & leadership
+- Languages: SQL, Python, R
+- Tools: dbt, Dagster, BigQuery, Amplitude, Google Analytics (GA4), Looker, Tableau, Git
+
+## Currently working on
+
+- AI observability (reducing AI risks, improving model performance, measuring model effectiveness)
+- Data engineering for AI/ML (data pipelines, feature stores, model monitoring)
+
+
+
+## Beyond data
+
+Outside of work, I enjoy learning continuously, exploring how AI and ML can be applied responsibly, and working on projects that make data accessible and useful for good causes. 
+
+I also:
+
+- Freedive, swim, and stand-up paddleboard
+- Carve wooden spoons
+- Tinker and learn new things (currently: acoustic guitar, spanish)
+- Read, recharge, and watch SailGP and tennis
+
+{{< figure src="/images/beyond_data.jpg" >}}
+
+
+## Thanks for stopping by — let’s connect!
+[LinkedIn](https://www.linkedin.com/in/bethcgross/)

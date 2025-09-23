@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = '/' # https://bethgross.github.io/my-hugo-site/
 languageCode = 'en-us'
 title = "Beth Gross"
 theme = 'mytheme'
@@ -9,25 +9,26 @@ theme = 'mytheme'
   [markup.highlight]
     noClasses = true
     codeFences = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 
 [params]
-  mainSections = ["Posts"]   # used by some list/home templates if referenced
+  mainSections = ["posts"]
+  description = "Analytics, data science, and product analytics notes by Beth Gross."
+  featured_image = "/images/tahoeblue-wide.jpg"
 
 
 [menu]
   [[menu.main]]
-    name = "About"
-    url = "/"
-    weight = 1
-  [[menu.main]]
     name = "Portfolio"
     url = "/portfolio/"
-    weight = 2
+    weight = 1
   [[menu.main]]
     name = "Posts"
     url = "/posts/"
-    weight = 3
+    weight = 2
 
 
 [taxonomies]

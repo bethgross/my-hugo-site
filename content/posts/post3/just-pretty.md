@@ -1,8 +1,8 @@
 ---
-title: "Roam Research"
-description: "Just pretty pictures"
-date: 2024-06-11T00:00:00Z
-featured_image: ""
+title: "Just Pretty"
+description: "Here's a pretty picture while I work on my site."
+date: 2025-08-02T00:00:00Z
+featured_image: '/images/sunrise-harbor.jpg'
 tags: []
 draft: false
 ---

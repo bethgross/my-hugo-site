@@ -1,7 +1,13 @@
 {{ define "main" }}
 <article>
-  <h1>{{ .Title }}</h1>
-  {{ with .Date }}<time datetime="{{ . }}">{{ .Format "2006-01-02" }}</time>{{ end }}
+  <header>
+    <h1>{{ .Title }}</h1>
+    <div class="meta">
+      {{ with .Date }}<time datetime="{{ . }}">{{ .Format "Jan 2, 2006" }}</time>{{ end }}
+      <span class="muted">{{ .ReadingTime }} min read</span>
+    </div>
+    {{ with .Params.description }}<p class="muted">{{ . }}</p>{{ end }}
+  </header>
   {{ .Content }}
 </article>
 {{ end }}

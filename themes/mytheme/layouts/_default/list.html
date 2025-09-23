@@ -1,6 +1,18 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<ul>
-  {{ range .Paginator.Pages }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
-</ul>
+<section class="listing">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="muted">{{ . }}</div>{{ end }}
+  {{ range .Paginator.Pages }}
+    <article class="post-teaser">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      {{ with .Params.description }}
+        <p>{{ . }}</p>
+      {{ else }}
+        {{ with .Summary }}<p>{{ . | plainify }}</p>{{ end }}
+      {{ end }}
+    </article>
+  {{ end }}
+  {{ template "partials/pagination.html" . }}
+</section>
 {{ end }}

@@ -3,11 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2017-03-02T12:00:00-05:00</lastmod>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2017-03-02T12:00:00-05:00</lastmod>
+    <loc>/posts/post1/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/post2/graph-my-brain/</loc>
+    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/post3/just-pretty/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/portfolio/</loc>
+  </url><url>
+    <loc>/posts/</loc>
   </url>
 </urlset>

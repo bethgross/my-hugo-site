@@ -1,0 +1,5 @@
+<article class="card" role="listitem">
+  {{ with .Get "icon" }}<span class="card__icon" aria-hidden="true">{{ . }}</span>{{ end }}
+  {{ with .Get "title" }}<h3>{{ . }}</h3>{{ end }}
+  <div class="card__body">{{ .Inner | markdownify }}</div>
+</article>

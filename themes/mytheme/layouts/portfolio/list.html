@@ -1,12 +1,20 @@
 {{ define "main" }}
-<h1>Portfolio</h1>
-<div class="grid">
-  {{ range .Pages }}
-    <a class="card" href="{{ .RelPermalink }}">
-      {{ with .Resources.GetMatch (default "" .Params.thumb) }}<img src="{{ .RelPermalink }}" alt="">{{ end }}
-      <h2>{{ .Title }}</h2>
-      {{ with .Params.summary }}<p class="muted">{{ . }}</p>{{ end }}
-    </a>
+  {{ with .Content }}
+    <section class="section">
+      {{ . }}
+    </section>
   {{ end }}
-</div>
+
+  <section class="section">
+    <div class="section__grid">
+      {{ range .Pages }}
+        <article class="summary">
+          {{ with .Resources.GetMatch (default "" .Params.thumb) }}<img class="summary__thumb" src="{{ .RelPermalink }}" alt="">{{ end }}
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+          <a class="summary__cta" href="{{ .RelPermalink }}">View project</a>
+        </article>
+      {{ end }}
+    </div>
+  </section>
 {{ end }}
