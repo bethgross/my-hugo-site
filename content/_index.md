@@ -36,7 +36,7 @@ I also:
 - Tinker and learn new things (currently: acoustic guitar, spanish)
 - Read, recharge, and watch SailGP and tennis
 
-{{< figure src="/images/beyond_data.jpg" >}}
+![Beyond Data](/images/beyond_data.jpg)
 
 
 ## Thanks for stopping by — let’s connect!

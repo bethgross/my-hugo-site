@@ -9,4 +9,4 @@ draft: false
 
 ## While I work on my site, here's a sunrise
 
-{{< figure src="/images/sunrise-harbor.jpg" caption="Sunrise" >}}
+![Sunrise](images/sunrise-harbor.jpg)
