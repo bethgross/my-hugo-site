@@ -1,4 +1,4 @@
-baseURL = '/' # https://bethgross.github.io/my-hugo-site/
+baseURL = 'https://bethgross.github.io/my-hugo-site/' # https://bethgross.github.io/my-hugo-site/
 languageCode = 'en-us'
 title = "Beth Gross"
 theme = 'mytheme'
