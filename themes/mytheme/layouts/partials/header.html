@@ -1,8 +1,8 @@
 <div class="brand">
-  <a href="{{ site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+  <a href="{{ site.Home.Permalink }}">{{ .Site.Title }}</a>
 </div>
 <nav>
   {{ range site.Menus.main }}
-    <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    <a href="{{ .URL | absURL }}">{{ .Name }}</a>
   {{ end }}
 </nav>

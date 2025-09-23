@@ -14,7 +14,7 @@
           {{- $img := default (site.Params.featured_image) (.Param "featured_image") -}}
           <li class="post-list__item">
             <a class="post-list__thumb" href="{{ .RelPermalink }}">
-              {{ with $img }}<img src="{{ . | relURL }}" alt="">{{ end }}
+              {{ with $img }}<img src="{{ partial "utils/absurl.html" . }}" alt="">{{ end }}
             </a>
             <div class="post-list__body">
               <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>

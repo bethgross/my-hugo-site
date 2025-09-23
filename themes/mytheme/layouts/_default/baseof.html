@@ -6,7 +6,7 @@
   <title>{{ block "title" . }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   {{ partial "head.html" . }}
   {{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
 </head>
 <body>
   <div class="site">

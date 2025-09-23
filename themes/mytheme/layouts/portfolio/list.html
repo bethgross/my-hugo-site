@@ -9,10 +9,10 @@
     <div class="section__grid">
       {{ range .Pages }}
         <article class="summary">
-          {{ with .Resources.GetMatch (default "" .Params.thumb) }}<img class="summary__thumb" src="{{ .RelPermalink }}" alt="">{{ end }}
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Resources.GetMatch (default "" .Params.thumb) }}<img class="summary__thumb" src="{{ .Permalink }}" alt="">{{ end }}
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
           {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-          <a class="summary__cta" href="{{ .RelPermalink }}">View project</a>
+          <a class="summary__cta" href="{{ .Permalink }}">View project</a>
         </article>
       {{ end }}
     </div>

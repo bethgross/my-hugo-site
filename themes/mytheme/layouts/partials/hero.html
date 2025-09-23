@@ -1,7 +1,8 @@
-{{- $image := .Param "hero_image" | default (.Param "featured_image") | default (site.Param "featured_image") -}}
+{{- $image := .Param "hero_image" | default (.Param "featured_image") | default (site.Param "featured_image") | default "/images/tahoeblue-wide.jpg" -}}
+{{- $imageURL := partial "utils/absurl.html" $image -}}
 {{- $kicker := .Param "hero_kicker" -}}
 {{- $subtitle := .Param "hero_subtitle" | default (.Params.description) -}}
-<section class="hero" {{ with $image }}style="--hero-image: url('{{ . | relURL }}')"{{ end }}>
+<section class="hero" style="--hero-image: url('{{ $imageURL }}')">
   <div class="hero__media" role="presentation"></div>
   <div class="hero__overlay"></div>
   <div class="hero__content">
@@ -11,7 +12,7 @@
     {{ with .Params.hero_cta }}
       <div class="hero__actions">
         {{ range . }}
-          <a class="hero__button" href="{{ .url | relURL }}">{{ .label }}</a>
+          <a class="hero__button" href="{{ partial "utils/absurl.html" .url }}">{{ .label }}</a>
         {{ end }}
       </div>
     {{ end }}

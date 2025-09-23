@@ -1,0 +1,9 @@
+{{- $value := . -}}
+{{- if not (strings.HasPrefix $value "http") -}}
+  {{- $base := strings.TrimSuffix "/" site.BaseURL -}}
+  {{- if not (strings.HasPrefix $value "/") -}}
+    {{- $value = printf "/%s" $value -}}
+  {{- end -}}
+  {{- $value = printf "%s%s" $base $value -}}
+{{- end -}}
+{{- $value -}}

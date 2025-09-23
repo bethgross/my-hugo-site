@@ -16,9 +16,9 @@
             {{ range $pages }}
               <article class="summary">
                 <p class="summary__date">{{ .Date.Format "Jan 2, 2006" }}</p>
-                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
                 {{ with .Params.description }}<p>{{ . }}</p>{{ else }}{{ with .Summary }}<p>{{ . | plainify }}</p>{{ end }}{{ end }}
-                <a class="summary__cta" href="{{ .RelPermalink }}">Read more</a>
+                <a class="summary__cta" href="{{ .Permalink }}">Read more</a>
               </article>
             {{ end }}
           </div>
@@ -34,10 +34,10 @@
         <div class="section__grid">
           {{ range first 4 .Pages }}
             <article class="summary">
-              {{ with .Resources.GetMatch (default "" .Params.thumb) }}<img class="summary__thumb" src="{{ .RelPermalink }}" alt="">{{ end }}
-              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              {{ with .Resources.GetMatch (default "" .Params.thumb) }}<img class="summary__thumb" src="{{ .Permalink }}" alt="">{{ end }}
+              <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
               {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-              <a class="summary__cta" href="{{ .RelPermalink }}">View project</a>
+              <a class="summary__cta" href="{{ .Permalink }}">View project</a>
             </article>
           {{ end }}
         </div>
